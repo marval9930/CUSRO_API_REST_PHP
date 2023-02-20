@@ -1,5 +1,6 @@
 <?php 
-require_once("ClassPersona.php");
+//require_once("ClassPersona.php");
+require_once("autoload.php");
 class Empleado extends Persona{
     protected $strPuesto;
 

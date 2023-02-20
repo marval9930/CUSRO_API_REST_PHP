@@ -1,5 +1,10 @@
 <?php 
-require_once("ClassPersona.php");
+namespace Controllers;
+//require_once("../models/Persona.php");
+require_once("../autoload.php");
+use models\Persona;
+
+
 class Empleado extends Persona{
     protected $strPuesto;
 

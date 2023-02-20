@@ -1,24 +1,24 @@
 <?php 
-require_once("ClassPersona.php");
-class Empleado extends Persona{
-    protected $strPuesto;
+//require_once("ClassPersona.php");
+require_once("autoload.php");
+class Cliente extends Persona{
+    protected $fltCredito;
 
     function __construct(int $dpi, string $nombre, int $edad)
     {
         parent::__construct($dpi,$nombre,$edad);
     }
 
-    public function setPuesto(string $puesto){
-        $this->strPuesto=$puesto;
+    public function setCredito(string $puesto){
+        $this->fltCredito=$puesto;
     }
 
-    public function getPuesto():string
+    public function getCredito():float
     {
-       return $this->strPuesto;
+       return $this->fltCredito;
     }
 
-
-    
+     
     public function getDatosPersonales(){
         $datos="
         <h2>DATOS PERSONALES</h2>

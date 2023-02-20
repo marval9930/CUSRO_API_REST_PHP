@@ -1,6 +1,7 @@
 <?php
-require_once("ClassEmpleado.php");
-require_once("ClassCliente.php");
+//require_once("ClassEmpleado.php");
+//require_once("ClassCliente.php");
+require_once("autoload.php");
 
 $objEmpleado=new Empleado(1233,"margarito",25);
 $objEmpleado->setPuesto("administrador");

@@ -1,6 +1,11 @@
 <?php
-require_once("ClassEmpleado.php");
-require_once("ClassCliente.php");
+// require_once("../controllers/Empleado.php");
+// require_once("../controllers/Cliente.php");
+// require_once("../controllers/Persona.php");
+require_once("../autoload.php");
+use controllers\Empleado;
+use controllers\Cliente;
+//use Controllers\Persona;
 
 $objEmpleado=new Empleado(1233,"margarito",25);
 $objEmpleado->setPuesto("administrador");
@@ -18,3 +23,7 @@ echo $objCliente->getDatosPersonales();
 echo 'Creditos: '.$objCliente->getCredito();
 $objCliente->setMensaje("Bievenido cliente");
 echo $objCliente->getMensaje();
+
+// $msg= new Persona();
+// echo "<br><br>";
+// echo $msg->saludar();
